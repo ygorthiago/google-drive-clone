@@ -15,7 +15,7 @@ export default class TestUtil {
     return new Date(dateString).getTime()
   }
   
-  static geneateReadableStream(data) {
+  static generateReadableStream(data) {
     return new Readable({
       objectMode: true,
       read() {

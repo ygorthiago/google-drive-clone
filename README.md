@@ -9,10 +9,10 @@
 
 - Web API
     - [X] Must list downloaded files
-    - [ ] Must receive files stream and save in the disk 
-    - [ ] Must notify about file storage progress in disk 
-    - [ ] Must allow file upload of these formats: image, video or audio
-    - [ ] Must achieve 100% code coverage in tests
+    - [X] Must receive files stream and save in the disk 
+    - [X] Must notify about file storage progress in disk 
+    - [X] Must allow file upload of these formats: image, video or audio
+    - [X] Must achieve 100% code coverage in tests
 
 - Web App 
     - [ ] Must list downloaded files

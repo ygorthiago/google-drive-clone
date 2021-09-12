@@ -1,6 +1,17 @@
 export default class ViewManager {
   constructor() {
     this.tbody = document.getElementById('tbody')
+    this.newFileBtn = document.getElementById('newFileBtn')
+
+    this.formatter = new Intl.DateTimeFormat('pt', { 
+      locale: 'pt-br',
+      weekday: 'long', 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric', 
+      hour: '2-digit', 
+      minute: '2-digit' 
+    })
   }
 
   getIcon(file) {
@@ -20,20 +31,11 @@ export default class ViewManager {
   }
 
   updateCurrentFiles(files) {
-    const dateOptions = { 
-      weekday: 'long', 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric', 
-      hour: 'numeric', 
-      minute: 'numeric' 
-    }
-
     const template = (item) => `
       <tr>
         <td>${this.makeIcon(item.file)} ${item.file}</td>
         <td>${item.owner}</td>
-        <td>${new Date(item.lastModified).toLocaleDateString('pt-BR', dateOptions)}</td>
+        <td>${this.formatter.format(new Date(item.lastModified))}</td>
         <td>${item.size}</td>
       </tr>
     `

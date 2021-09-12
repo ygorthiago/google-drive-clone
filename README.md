@@ -15,8 +15,8 @@
     - [X] Must achieve 100% code coverage in tests
 
 - Web App 
-    - [ ] Must list downloaded files
-    - [ ] Must allow any size file upload
-    - [ ] Must have an upload button
-    - [ ] Must show upload progress
-    - [ ] Must be able to upload by drag and drop 
+    - [X] Must list downloaded files
+    - [X] Must allow any size file upload
+    - [X] Must have an upload button
+    - [X] Must show upload progress
+    - [X] Must be able to upload by drag and drop 
